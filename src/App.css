@@ -1,15 +1,10 @@
 .App {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-    font-weight: 300;
+    font-family: 'Merriweather Sans', sans-serif;
+    background: #fff1f1;  
+    
 }
 
-p {
-    font-size: 1.1em;
 
-    line-height: 1.7em;
-    color: #999;
-}
 
 a,
 a:hover,
@@ -21,7 +16,7 @@ a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: rgb(255, 247, 247);
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -57,24 +52,24 @@ span {
 
 .navFooter {
     position: fixed;
-    bottom: 10px;
-    width: 250px;
+    bottom: 0px;
+    width: 290px;
 }
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+/* --------------------------------------------------- */
 
 .wrapper {
     display: flex;
     align-items: stretch;
 }
-
+/*---sahil-----------------*/
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: -webkit-linear-gradient(right, rgb(101, 243, 236), rgb(186, 228, 222) 35%, rgb(194, 255, 240) 30%, rgb(219, 216, 216));
+    min-width: 290px;
+    max-width: 290px;
+    background: rgb(255, 255, 238);border-radius: 0px 30px 30px 0px;
     transition: all 0.3s;
+    border: 1px solid rgb(233, 227, 227);
     color: white;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #sidebar.active {
@@ -102,11 +97,11 @@ span {
     padding: 20px 10px;
     text-align: center;
     font-size: 0.85em;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.60px;
 }
 
 #sidebar ul .link a {
-    text-align: left;
+    text-align: center;
 }
 
 #sidebar.active ul .link a {
@@ -114,7 +109,7 @@ span {
     padding: 20px 10px;
     text-align: center;
     font-size: 0.85em;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.60px;
 }
 
 #sidebar .sidebar-header {
@@ -132,10 +127,10 @@ span {
     transform: translateY(-50%);
     padding: 20px 10px;
 }
-
+/*-----------------------font size------------*/
 #sidebar ul li a {
     padding: 10px;
-    font-size: 0.95em;
+    font-size: 0.93em;
     display: block;
 }
 
@@ -145,7 +140,7 @@ span {
 } */
 
 #sidebar ul li a i {
-    margin-right: 10px;
+    margin-right: 3px;
 }
 
 #sidebar ul li.active > a,
@@ -318,12 +313,14 @@ a.article:hover {
 
 @media (max-width: 768px) {
     #sidebar {
-        min-width: 250px;
-        max-width: 250px;
-        background: -webkit-linear-gradient(right, rgb(220, 248, 118), rgb(228, 225, 186) 35%, rgb(255, 251, 194) 30%, rgb(219, 216, 216));
+        min-width: 290px;
+        max-width: 290px;
+        background: rgb(255, 255, 238);border-radius: 0px 30px 30px 0px;
         transition: all 0.3s;
+        border: 1px solid rgb(233, 227, 227);
         color: white;
         height: 100vh;
+        font-family: 'Merriweather Sans', sans-serif;
     }
 
     #sidebar.active {
@@ -334,14 +331,14 @@ a.article:hover {
     #sidebar.active .btn-main {
         display: none;
     }
-    .dropdown-toggle::after {
+  /*--  .dropdown-toggle::after {
         top: auto;
         bottom: 10px;
         right: 50%;
         -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
         transform: translateX(50%);
-    }
+    }*/
     #sidebar.active {
         margin-left: 0 !important;
     }
@@ -368,9 +365,7 @@ a.article:hover {
     #sidebar ul li a i {
         font-size: 1.3em;
     }
-    #sidebar {
-        margin-left: 0;
-    }
+    
     #sidebarCollapse span {
         display: none;
     }
@@ -440,6 +435,12 @@ a.article:hover {
     }
 }
 
+@media (max-width: 273px) {
+
+    /*-------code left same way as above--------*/
+}
+
+
 /*---------image---------*/
 
 .imag{
@@ -450,15 +451,42 @@ a.article:hover {
     background-size: cover;
   }
 .bor{
-    box-shadow: 0 5px 8px 0 rgb(5, 102, 192), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 30px;
+    box-shadow: 0 5px 8px 0 rgb(80, 152, 219), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 10px ;
+    background-color: rgb(36, 96, 185);
+    
 }
 .bor1{
-    box-shadow: 0 5px 8px 0 rgba(197, 36, 24, 0.699), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 30px;
+    box-shadow: 0 5px 8px 0 rgb(235, 100, 90), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 10px ;
+    background-color: rgb(236, 51, 51);
 }
 .bor2{
-    box-shadow: 0 5px 8px 0 rgba(255, 197, 8, 0.822), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 30px;
-    background-color: #fce980f3;
+    box-shadow: 0 5px 8px 0 rgba(255, 197, 8, 0.822), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 10px ;
+    background-color: #fff6c1f3;
 }
-.cir{
+
+.fa-earlybirds{
+    padding-top: 50%;
+}
+.temp2{
+    padding-top: 50%;
+}
+.fa-envelope-open-text{
+    margin-left: 100%;
+}
+.progress {
+    height: 5px;
+} 
+.progress .sr-only {
+     position: relative;
+     }
+.fa-ellipsis-h{
+    margin-left: 45%;
+}
+.fa-user-tie{
     border-radius: 30px;
+    padding: 3px 5px 2px 4px;
 }
+.btn{
+    border-radius: 10px;
+}
+

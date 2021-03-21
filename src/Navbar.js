@@ -10,7 +10,7 @@ function Navbar() {
     return (
         <nav
             id='sidebar'
-            className='active'
+            className=''
             style={{
                 zIndex: 99999,
                 position: 'fixed',
@@ -28,12 +28,12 @@ function Navbar() {
                     
                     
                     <div class="row">
-                    <div class="col "><i class="fab fa-earlybirds fa-2x text-success"></i></div>
+                    <div class="col "><i class="fas fa-user-tie  text-white bg-warning"></i></div>
 
                       <div class="col "><h6 class="text-dark">Sahil</h6></div>
                       
-                      <div class="col "><i class="fas fa-bell text-danger"></i></div>
-                      <div class="col "><i class="fas fa-sliders-h text-primary"></i></div>
+                      <div class="col "><i class="far fa-bell text-dark btn btn-light"></i></div>
+                      <div class="col "><i class="fas fa-sliders-h text-dark btn btn-light"></i></div>
                       </div>
                 </button>
                 
@@ -43,21 +43,24 @@ function Navbar() {
             
                 <li>
                     
-                    <a href='#homeSubmenu'> <div class="row">
-                      <div class="col "><h3 class='text-dark'>6:25</h3></div>
+                    <a href='#homeSubmen'> <h6 class="text-dark">Health</h6><div class="row">
+                      
+                      <div class="col "><h3 class='text-dark '>6:25</h3></div>
                       
                       <div class="col "><h3 class='text-dark'>120</h3></div>
 
                       <div class="col "><h3 class='text-dark'>1.84</h3></div>
-                                            <div class="col "><i class="fas fa-moon text-primary"></i><span class='text-dark'>Hr</span><div class="progress ">
+                    </div>
+                    <div class="row">
+                                            <div class="col "><i class="fas fa-moon text-primary"></i><span class='text-secondary'><small>Hour</small></span><div class="progress " >
                         <div class="progress-bar bg-primary" role="progressbar" style={{width:'70%'}}  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                         </div></div>
                                             
-                                            <div class="col "><i class="fas fa-heartbeat text-danger"></i><span class="text-dark">B</span><div class="progress">
+                                            <div class="col "><i class="fas fa-heartbeat text-danger"></i><span class="text-secondary"><small>Bpm</small></span><div class="progress">
                         <div class="progress-bar bg-danger" role="progressbar" style={{width:'50%'}}  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                         </div></div>
 
-                                            <div class="col "><i class="fas fa-apple-alt text-success"></i><span class="text-dark">K</span><div class="progress">
+                                            <div class="col "><i class="fas fa-apple-alt text-success"></i><span class="text-secondary"><small>Kcal</small></span><div class="progress">
                         <div class="progress-bar bg-success" role="progressbar" style={{width:'28%'}}  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                         </div></div>
                       
@@ -65,77 +68,52 @@ function Navbar() {
                 </li>
                 
                 <li>
-                <a href='#'><li class="list-group-item d-flex flex-row bor2 ">
+                <a href='#'><div class="container  bor2 ">
                           
-                          <div class="col-md-1 col-lg-1 col-xl-1  ">
                           
-                          <i class="fas fa-address-card fa-3x text-dark"></i>
-                          
-                        </div>
                          
-                        <div class="col-md-1 col-lg-1 col-xl-1 mx-auto ">
-                        <h6 class='font-weight-light text-dark '>Trainer</h6>
-                       
-                          
-                       <div class="btn btn-danger btn-sm" >Sign up</div>
-                          
+                        
+                        <div class="row">
+                      <div class="col-4 "><i class="fab fa-earlybirds fa-4x text-danger"></i></div>
+                      
+                      <div class="col-8 "><p class='font-weight-light text-dark text-center'><small >Sign up for a personal trainer to improve your result <br/></small><span class="badge badge-pill badge-warning text-white ">Sign up</span></p></div>
+ 
                         </div>
                         
                         
-                    </li></a>
+                    </div></a>
                 </li>
+                
+                
                 <li>
-                <a  class="text-dark">Today training</a>
+                <a href='#'><h6 class="text-dark">Today trainings</h6> < div class="container bor bg-primary">
+                          
+                <div class="row ">
+                      
+                      <div class="col-4 "><p >Box<small> Sport-Club</small><span class="badge badge-pill badge-light">12:00</span></p></div>
+                      
+                      <div class="col-3 "><p class='text-white text-center py-1'> 40<small> min</small> Warmup</p></div>
+                      <div class="col-3 "><p class='text-white text-center py-1'> 20<small> min</small> Pullup</p></div>
+
+                      <div class="col-2 "><i class="fas fa-ellipsis-v text-white py-3"></i></div>
+                    </div>
+                    </div></a>
                 </li>
                 
                 <li>
-                <a href='#'><li class="list-group-item d-flex flex-row bor bg-primary cir">
+                    <a href='#' ><div class="container bor1 ">
                           
-                          <div class="col-md-1 col-lg-1 col-xl-1  ">
-                          <h6 class="text-uppercase text-wight-light">Sport clube</h6>
-                       
-                          
-                          <span class="badge badge-pill badge-secondary">10:30</span>
-                          
-                          
-                        </div>
-                         
-                        <div class="col-md-1 col-lg-1 col-xl-1 mx-auto ">
-                          <h6 class="text-uppercase font-weight-bold">24</h6>
-                       
-                          <p class='text-white'>
-                            min
-                          </p>
-                          
-                        </div>
-                        
-                        <i class="fas fa-ellipsis-v text-white"></i>
-                    </li></a>
-                </li>
-                
-                <li>
-                    <a href='#' ><li class="list-group-item d-flex flex-row bor1 bg-danger ">
-                          
-                              <div class="col-md-1 col-lg-1 col-xl-1  ">
-                              <h6 class="text-wight-light text-uppercase ">Sport club</h6>
-                           
-                              
-                              <span class="badge badge-pill badge-secondary">12:00</span>
-                              
-                              
-                            </div>
-                             
-                            <div class="col-md-1 col-lg-1 col-xl-1 mx-auto ">
-                              <h6 class="text-uppercase font-weight-bold">24</h6>
-                           
-                              <p class='text-white'>
-                                min
-                              </p>
-                              
-                            </div>
-                            
-                            <i class="fas fa-ellipsis-v text-white"></i>
-                        </li></a>
+                    <div class="row ">
+                      
+                      <div class="col-4 "><p >Crossfit<small> Sport-Club</small><span class="badge badge-pill badge-light">12:00</span></p></div>
+                      
+                      <div class="col-3 "><p class='text-white text-center py-1'> 40<small> min</small> Warmup</p></div>
+                      <div class="col-3 "><p class='text-white text-center py-1'> 20<small> min</small> Pullup</p></div>
+
+                      <div class="col-2 "><i class="fas fa-ellipsis-v text-white py-3"></i></div>
+                      
+                    </div>
+                    </div><i class="fas fa-ellipsis-h text-secondary py-3"></i></a>
                 </li>
                 
             </ul>
@@ -147,11 +125,19 @@ function Navbar() {
                 
                        
                 
-                        <li class="list-group-item d-flex flex-row">
-                          <div class="imag"></div> 
-                            <span class="media-body " ><p class='text-dark font-weight-bold d-flex p-2'> SAHIL </p></span>
-                            
-                            <div class="btn btn-light " ><i class="fas fa-envelope-open-text text-info"></i></div>
+                        <li class="list-group-item ">
+                        
+                      
+                     <div class="row">
+                      
+                      <div class="col-2 imag"></div>
+                      
+                      <div class="col-3 "><p class='text-dark font-weight-bold d-flex '> Sahil</p></div>
+                      <div class="col-3 "></div>
+                      
+
+                      <div class="col-4 text-right"><i class="far fa-comment-dots text-dark btn btn-light"></i></div>
+                    </div>
                         </li>
                     </ul>
                     
