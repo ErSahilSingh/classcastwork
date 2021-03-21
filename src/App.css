@@ -1,7 +1,6 @@
 .App {
-    font-family: 'Merriweather Sans', sans-serif;
-    background: #fff1f1;  
-    
+    font-family: 'Poppins', sans-serif;
+    background: #fff1f1;   
 }
 
 
@@ -12,6 +11,8 @@ a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 .navbar {
@@ -21,6 +22,7 @@ a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-btn {
@@ -36,6 +38,10 @@ a:focus {
     margin: 40px 0;
 }
 
+.text-dark{
+   font-size: 1rem;
+   margin:5px;
+}
 i {
     font-size: 25px;
 }
@@ -53,7 +59,7 @@ span {
 .navFooter {
     position: fixed;
     bottom: 0px;
-    width: 290px;
+    width: 350px;
 }
 /* --------------------------------------------------- */
 
@@ -63,13 +69,13 @@ span {
 }
 /*---sahil-----------------*/
 #sidebar {
-    min-width: 290px;
-    max-width: 290px;
+    min-width: 350px;
+    max-width: 350px;
     background: rgb(255, 255, 238);border-radius: 0px 30px 30px 0px;
     transition: all 0.3s;
     border: 1px solid rgb(233, 227, 227);
     color: white;
-    font-family: 'Merriweather Sans', sans-serif;
+  
 }
 
 #sidebar.active {
@@ -320,7 +326,7 @@ a.article:hover {
         border: 1px solid rgb(233, 227, 227);
         color: white;
         height: 100vh;
-        font-family: 'Merriweather Sans', sans-serif;
+     
     }
 
     #sidebar.active {
@@ -445,22 +451,24 @@ a.article:hover {
 
 .imag{
     background-image: url(../src/image/sahil.jpg);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
     background-size: cover;
+    background-position: center;
   }
 .bor{
-    box-shadow: 0 5px 8px 0 rgb(80, 152, 219), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 10px ;
-    background-color: rgb(36, 96, 185);
+    box-shadow: 0px 10px 0px -5px #BDD6FF, 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 13px ;
+    background-color: #468BFF;
     
 }
 .bor1{
-    box-shadow: 0 5px 8px 0 rgb(235, 100, 90), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 10px ;
-    background-color: rgb(236, 51, 51);
+    
+    box-shadow: 0px 10px 0px -5px #FFB8BC, 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 13px ;
+    background-color: #FF605A;
 }
 .bor2{
-    box-shadow: 0 5px 8px 0 rgba(255, 197, 8, 0.822), 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 10px ;
+    box-shadow:  0px 10px 0px -5px #f8d15d, 0 9px 26px 0 rgba(0, 0, 0, 0.041); border-radius: 10px ;
     background-color: #fff6c1f3;
 }
 
@@ -483,8 +491,10 @@ a.article:hover {
     margin-left: 45%;
 }
 .fa-user-tie{
-    border-radius: 30px;
-    padding: 3px 5px 2px 4px;
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    padding: 7px;
 }
 .btn{
     border-radius: 10px;
